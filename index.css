@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+#box{
+    width: 30%;
+    /* background-color: aliceblue; */
+    background-color: rgb(225,54,97);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 35px;
+}
+
+#display{
+    width: 70%;
+    background-color: aliceblue;
+    height: 100vh;
+    /* background-image: url('https://media.istockphoto.com/id/1328049157/photo/mens-short-sleeve-t-shirt-mockup-in-front-and-back-views.jpg?s=612x612&w=0&k=20&c=1_zfKF73GEFp5RtLEyQQn8ZH5UB5THiom2pBSXb9-Uw='); */
+    /* background-image: url('https://img.freepik.com/premium-photo/classic-white-tshirt-plain-cotton-tee-isolated-transparent-background_1204564-140051.jpg'); */
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3JtMzYzLWIwOC1tb2NrdXAuanBn.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#color-picker {
+    display: none;
+    display: inline-block;
+    width: 500px;
+    height: 50px;
+    border-radius: 90%;
+    background-color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 20px;
+    border: 3px solid #eee;
+    z-index: -1;
+    visibility: hidden;
+}
+
+#color-picker:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+#color-display {
+    z-index: 2;
+    /* padding: 20px; */
+    width: 250px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+    position: relative;
+    bottom: 55px;
+    cursor: pointer;
+}
+
+img{
+    width: 250px;
+    height: 100px;
+    border-radius: 12px;
+}
+
+
+
+.dropdown {
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* When the dropdown is focused, add some shadow and a nicer border */
+select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button styles */
+button {
+    width: 250px;
+    height: 45px;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display area for selections */
+#display-selections {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

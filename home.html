@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Pickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+<!-- Pickr JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.8.2/dist/pickr.min.js"></script>
+
+</head>
+<body>
+    <div id="box">
+        <div id="color-picker"></div>
+        <div id="color-display">
+            <img id="image" src="https://miro.medium.com/v2/resize:fit:3840/1*3l_gNnYqeGpwNUoQEYGM9w.jpeg" alt="">
+        </div>
+        <!-- <div id="color-picker">Choose a color</div>
+        <input type="color" id="hidden-color-input" style="display:none;"> -->
+        
+        <!-- <div>hello</div>
+        <div>dii</div> -->
+        <div class="dropdown">
+            <label for="pattern">Choose a pattern:</label>
+            <select id="pattern"></select>
+        </div>
+    
+        <!-- Garment Dropdown -->
+        <div class="dropdown">
+            <label for="garment">Choose a garment type:</label>
+            <select id="garment"></select>
+        </div>
+    
+        <!-- Fabric Dropdown -->
+        <div class="dropdown">
+            <label for="fabric">Choose a fabric:</label>
+            <select id="fabric"></select>
+        </div>
+    
+        <!-- Submit Button -->
+        <button id="submit-button">Submit Selections</button>
+        <!-- <div id="display-selections"></div> -->
+    
+        
+    </div>
+    <div id="display"></div>
+
+    <!-- Div to display the selected color -->
+
+    <!-- Add the Pickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.8.2/dist/pickr.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
